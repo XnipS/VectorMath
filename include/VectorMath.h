@@ -44,10 +44,16 @@ static void VectorSum(Vector2* output, Vector2* i, Vector2* j) {
   output->y = i->y + j->y;
 }
 
-// Sum two vectors together
+// Subtract two vectors together
 static void VectorSubtract(Vector2* output, Vector2* i, Vector2* j) {
   output->x = i->x - j->x;
   output->y = i->y - j->y;
+}
+
+// Multiply two vectors together
+static void VectorMultiply(Vector2* output, Vector2* i, Vector2* j) {
+  output->x = i->x * j->x;
+  output->y = i->y * j->y;
 }
 
 // Normalise vector
