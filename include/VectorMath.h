@@ -56,6 +56,12 @@ static void VectorMultiply(Vector2* output, Vector2* i, Vector2* j) {
   output->y = i->y * j->y;
 }
 
+// Multiply two vectors together
+static void VectorScalarMultiply(Vector2* output, Vector2* input, double j) {
+  output->x = input->x * j;
+  output->y = input->y * j;
+}
+
 // Normalise vector
 static void VectorNormalise(Vector2* output) {
   static double mag;
